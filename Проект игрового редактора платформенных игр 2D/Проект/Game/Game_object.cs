@@ -40,6 +40,8 @@ namespace Game
         public float getH() { return height; }
         public float getW() { return widht; }
 
+
+
         public virtual void onCollision(Game_object o)
         {
         }
@@ -53,6 +55,18 @@ namespace Game
             if(y> this.y + this.height) { return false; }
 
             return true;
+        }
+
+        public float setX(float x)
+        {
+            this.x = x;
+            return this.x;
+        }
+
+        public float setY(float y)
+        {
+            this.y = y;
+            return this.y;
         }
     }
 }

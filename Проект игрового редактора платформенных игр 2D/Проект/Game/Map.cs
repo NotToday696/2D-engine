@@ -25,10 +25,6 @@ namespace Game
         }
         public void step()
         {
-            //Здесь у каждого элемента должеен вызываться метод "Update".
-            //o.Update();
-            // Два цикла for по объектам, чтобы проверить столконовение. 
-            // Нужны ссылки на объекты списка. 
             for(int i = 0; i<objects.Count; i++)
             {
                 objects[i].Update();
@@ -42,6 +38,18 @@ namespace Game
                     }
                 }
             }           
+        }
+
+        public object getobjets()
+        {
+            //Game_object z=null;
+            //for(int i=0;i<objects.Count;i++)
+            //{
+            //   z = objects.ElementAt(i);
+
+            //}
+            //return z;
+            return objects;
         }
     }
 }

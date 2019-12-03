@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Game
 {
-    class Graphical_object : Game_object
+    public class Graphical_object : Game_object
     {
         const float brake = 0.1f;
         Image image;
@@ -24,5 +24,10 @@ namespace Game
             if (dy == 0) { return; }
             dy -= brake;    
         }
+
+        public object GetImage()
+        {
+            return image;
+        }  
     }
 }
